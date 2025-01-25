@@ -1,0 +1,348 @@
+/* Define the custom font */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('Font/quickless/Quickless.ttf') format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffffff, #ffffff); /* Gradient background for the body */
+    color: #333; /* Dark text for readability */
+}
+
+p {
+    font-size: 22px;
+}
+
+header {
+    background: linear-gradient(to right, #ffffff, #ebeaea ); /* Gradient background for the header */
+    color: #000000; /* White header text for readability */
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    position: relative;
+}
+
+.logo-container {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.title-container {
+    flex-grow: 1;
+    text-align: left;
+    font-family: 'CustomFont', 'Times New Roman', Times, serif; /* Change font of the title container */
+    font-size: 60px;
+}
+
+.logo {
+    height: 160px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+nav {
+    margin: 1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #fff; /* White nav link color for readability */
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+    padding-bottom: 100px; /* Add padding to the bottom to prevent footer overlap */
+}
+
+.banner {
+    background: linear-gradient(to bottom, #FFD700, #FFA500); /* Gradient background for the banner */
+    color: #333; /* Dark text for readability */
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer {
+    background: linear-gradient(to right, #333333, #4a4e52); /* Gradient background for the footer */
+    color: #fff; /* White footer text for contrast */
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #fff; /* White dropdown background for clarity */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #333; /* Dark gray dropdown link color for readability */
+}
+
+.dropdown a:hover {
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.question {
+    font-weight: bold;
+    color: #006400;
+    margin: 10px 0;
+}
+
+.navigation {
+    margin: 20px 0;
+}
+
+.arrow {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.arrow:hover {
+    background-color: #696969;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#feedbackForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedbackForm label {
+    margin-top: 10px;
+}
+
+#feedbackForm input,
+#feedbackForm textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feedbackForm button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#feedbackForm button:hover {
+    background-color: #5A9BD4;
+}
+
+/* Feedback button styles */
+.feedback-button {
+    display: inline-block;
+    padding: 15px 30px; /* Make the button bigger */
+    background-color: #000000; /* Black color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left; /* Align to the left */
+    margin-top: 20px;
+}
+
+.feedback-button:hover {
+    background-color: #333333;
+}
+
+.volunteer-section {
+    display: flex;
+    max-width: 700px;
+    background: linear-gradient(to bottom, #123456, #345678);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-section1 {
+    display: flex;
+    max-width: 700px;
+    background: linear-gradient(to bottom, #ffae00, #ff8c00);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-section2 {
+    display: flex;
+    max-width: 700px;
+    background: linear-gradient(to bottom, #414141, #000000);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+.content h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: #123456;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.content .btn:hover {
+    background: #f0f0f0;
+    color: #345678;
+}
+
+.image {
+    flex: 1;
+    background: url('images/CodeScreen.jpg') no-repeat center center/cover;
+}
+
+.image1 {
+    flex: 1;
+    background: url('images/3DModeling.PNG') no-repeat center center/cover;
+}
+
+.image2 {
+    flex: 1;
+    background: url('images/Promote.jpeg') no-repeat center center/cover;
+}
+
+.news1 {
+    display: block;
+    max-width: 2300px;
+    background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.like-dislike {
+    margin-top: 20px;
+}
+
+.like-dislike button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like-dislike button:hover {
+    background-color: #5A9BD4;
+}
+
+.like-dislike span {
+    font-size: 18px;
+    margin-right: 20px;
+}

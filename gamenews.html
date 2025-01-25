@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game News</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
+    <script src="feedback.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/GfC.jpg" alt="Logo" class="logo" onclick="toggleDropdown()">
+                <div id="dropdown" class="dropdown">
+                    <a href="index.html">Home</a>
+                    <a href="gamenews.html">Games News</a>
+                    <a href="game.html">Games</a>
+                    
+                </div>
+            </div>
+            <div class="title-container">
+                <h1>Games For Christ</h1>
+            </div>
+        </div>
+    </header>
+   
+    <main>
+        <h1>Game News</h1>
+        <div class="container">
+            <div class="section active">
+                <h2>News</h2>
+                <p>Hey! welcome to the games news page, in here you will be able to see the latest news for
+                     upcoming christian games. They will be arranged from recent to oldest, and you will also be 
+                     able to view most popular news, just to save you some scrolling time. Enjoy!
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="news1">
+            <h1>Mini Games!</h1>
+            <h4>Posted on: 19/01/2025</h4>
+            <p>
+                Hey everyone! I'm excited to announce that I am planning on adding mini games to the Games page.
+                These mini games are not downloadable, but they will be playable on the website. Main games may take longer
+                to develop, so I thought I'd add some mini games to keep you entertained. I hope you enjoy them!
+                These mini games include bible trivia to help you boost your knowledge of the Bible.
+            </p>
+            <div class="like-dislike">
+                <button onclick="likePost()">Like</button>
+                <span id="likeCount">0</span>
+                <button onclick="dislikePost()">Dislike</button>
+                <span id="dislikeCount">0</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Games For Christ. All rights reserved.</p>
+    </footer>
+</body>
+</html>

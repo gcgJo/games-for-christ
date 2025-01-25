@@ -1,0 +1,144 @@
+/* Define the custom font */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('Font/quickless/Quickless.ttf') format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fdd172, #ff8c00); /* Gradient background for the body */
+    color: #333; /* Dark text for readability */
+}
+
+h2{
+    color: #ffffff;
+}
+
+p {
+    font-size: 22px;
+}
+
+header {
+    background: linear-gradient(to right, #ffffff, #ebeaea ); /* Gradient background for the header */
+    color: #000000; /* White header text for readability */
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    position: relative;
+}
+
+.logo-container {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.title-container {
+    flex-grow: 1;
+    text-align: left;
+    font-family: 'CustomFont', 'Times New Roman', Times, serif; /* Change font of the title container */
+    font-size: 60px;
+}
+
+.logo {
+    height: 160px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+nav {
+    margin: 1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #fff; /* White nav link color for readability */
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+    padding-bottom: 100px; /* Add padding to the bottom to prevent footer overlap */
+}
+
+
+
+footer {
+    background: linear-gradient(to right, #333333, #4a4e52); /* Gradient background for the footer */
+    color: #fff; /* White footer text for contrast */
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #fff; /* White dropdown background for clarity */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #333; /* Dark gray dropdown link color for readability */
+}
+
+.dropdown a:hover {
+    background-color: #f4f4f4;
+}
+
+.application-form-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.application-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.application-form-container label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.application-form-container input,
+.application-form-container textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.application-form-container button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #5a5a5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.application-form-container button:hover {
+    background-color: #1f1f1f;
+}

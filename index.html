@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="feedback.js" defer></script>
+    <script src="script.js" defer></script>
+    
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/GfC.jpg" alt="Logo" class="logo" onclick="toggleDropdown()">
+                <div id="dropdown" class="dropdown">
+                    <a href="index.html">Home</a>
+                    <a href="gamenews.html">Games News</a>
+                    <a href="game.html">Games</a>
+                    
+                </div>
+            </div>
+            <div class="title-container">
+                <h1>Games For Christ</h1>
+            </div>
+        </div>
+    </header>
+   
+    <main>
+        <div class="container">
+            <h1>About Me</h1>
+            <div class="section active">
+                <h2>Let's Start off with a little introduction</h2>
+                <p> Hi, my name is Jacob and I am a Game Developer. My whole life I've enjoyed playing video games from mobile
+                    games, to pc and console games, and ever since the covid lockdown started I've developed a passion for 
+                    game development. fast Forward today I am creating this project to publish my christian games.
+                </p>
+                <p class="question">Why Christian Games?</p>
+            </div>
+            <div class="section">
+                <h2>Here's why</h2>
+                <p> I want to try and use my tallent to glorify God, my goal is to create educational as well as fun, and 
+                    engaging christian games, I also want to use this project as an opportunity to get closer with God, I'm
+                    thinking of adding a page in this website called "My Journey" where everyone could share their journey
+                    in Christianity.
+
+                </p>
+                <p class="question">Keep scolling, there's more!</p>
+            </div>
+            <div class="section">
+                <h2>What to expect</h2>
+                <p>This website will be fully run by me, I will try update
+                     the Games for Christ website as much as possible, but in this website,
+                    you can expect to see the following:
+                </p>
+                <ul>
+                    <li>News of my upcoming christian games</li>
+                    <li>My downloadable christian games</li>
+                    <li>Art or sneakpeeks of my upcoming games</li>
+                    <li>And maybe more</li>
+                    
+                </ul>
+                <p class="question">How to navigate this website you ask?, go on, scroll</p>
+            </div>
+            <div class="section">
+                <h2>How to navigate this website</h2>
+                <p>do you want to access games, news or any thing else?</p>
+                <h4>To navigate to the website simply click on the "Games for Christ" Logo, and you will be 
+                    taken to whatever page you want to go to. 
+                </h4>
+                <img src="images/GfC.jpg">
+            </div>
+
+            <div class="section">
+                <h2>Follow me on my socials for really awesome posts</h2>
+                <p>You've made it to the end of the about me section, well done!</p>
+                <img src="images/TikTokPlug.png" length="400" width="400">
+                <img src="images/instaPlug.png" length="400" width="400">
+            </div>
+
+
+            <div class="navigation">
+                <a href="#" class="arrow" onclick="previousSection(); return false;">&#8592;</a>
+                <a href="#" class="arrow" onclick="nextSection(); return false;">&#8594;</a>
+            </div>
+        </div>
+
+        <h1>Do you want to join the Team?</h1>
+        <p>Simply send an email of your name, experience and a short paragraph of why you would like to join Games With Christ 
+            to the email shown below and I will try to reach out to you and schedule an interview.
+            Feel free to also give me feedback on what you would like this website to include.
+        </p>
+
+        <div class="volunteer-sections">
+            <div class="volunteer-section">
+                <div class="content">
+                    <h2>ARE YOU A PROGRAMMER?</h2>
+                    <p>Join us in developing our gaming project! It's like becoming a superhero, but instead of a cape, 
+                    you have a keyboard. Help us create epic games, and who knows? You might even get to be the hero who saves the day—virtual or otherwise!</p>
+                    <a href="programmingSec.html" class="btn">JOIN THE TEAM!</a>
+                </div>
+                <div class="image"></div>
+            </div>
+            <br>
+            <div class="volunteer-section1">
+                <div class="content">
+                    <h2>ARE YOU AN DESIGNER/ANIMATOR</h2>
+                    <p>Join us in designing our gaming project! It's like becoming a superhero, but instead of a cape, 
+                    you have a brush. Help us create stunning visuals, and who knows? 
+                    You might even get to be the artist who brings our games to life—virtual or otherwise!
+                    </p>
+                    <a href="artist.html" class="btn">JOIN THE TEAM!</a>
+                </div>
+                <div class="image1"></div>
+            </div>
+            <br>
+            <div class="volunteer-section2">
+                <div class="content">
+                    <h2>ARE YOU GOOD AT PROMOTING?</h2>
+                    <p>Join us in promoting our gaming project! It's like becoming a superhero, but instead of a cape, 
+                    you have a megaphone. Help us spread the word, and who knows? 
+                    You might even get to be the voice that brings our games to the world—virtual or otherwise!
+                    </p>
+                    <a href="promote.html" class="btn">JOIN THE TEAM!</a>
+                </div>
+                <div class="image2"></div>
+            </div>
+        </div>
+
+        <button class="feedback-button" onclick="openFeedbackForm()">Give Feedback</button>
+
+        <!-- Feedback Form Modal -->
+        <div id="feedbackModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeFeedbackForm()">&times;</span>
+                <h2>Feedback Form</h2>
+                <form id="feedbackForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+            
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2023 Games For Christ. All rights reserved.</p>
+    </footer>
+
+    <script type="module">
+        // Import Firebase functions
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-database.js";
+      
+        // Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCR3RVhxgtY1ZhkqFNmmZWxh10TyiuXdBY",
+          authDomain: "feedback-a9a80.firebaseapp.com",
+          projectId: "feedback-a9a80",
+          storageBucket: "feedback-a9a80.firebasestorage.app",
+          messagingSenderId: "649833230067",
+          appId: "1:649833230067:web:b050d43531dada77b8d186",
+          measurementId: "G-X37RDBH32J",
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app, "https://feedback-a9a80-default-rtdb.europe-west1.firebasedatabase.app");
+      
+        // Add event listener for the submit button
+        document.getElementById('submit').addEventListener('click', function (e) {
+          e.preventDefault();
+      
+          // Set data in the database
+          set(ref(db, 'feedback/' + document.getElementById('name').value), {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            feedback: document.getElementById('feedback').value,
+          })
+            .then(() => {
+              alert('Feedback submitted successfully!');
+            })
+            .catch((error) => {
+              console.error('Error submitting feedback:', error);
+            });
+        });
+     </script>
+</body>
+</html>
