@@ -401,59 +401,7 @@ footer {
 }
 
 
-/* Media queries for larger screens */
-@media (min-width: 668px) {
-    .header-content {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    .title-container {
-        font-size: 3rem;
-    }
-
-    .container {
-        width: 80%;
-    }
-
-    .application-form-container {
-        width: 80%;
-    }
-
-    .volunteer-section,
-    .volunteer-section1,
-    .volunteer-section2 {
-        max-width: 48%;
-        margin-bottom: 20px;
-    }
-
-    footer {
-        padding: 8px 15px; /* Reduce padding for larger screens */
-        font-size: 0.7rem; /* Reduce font size for larger screens */
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        width: 70%;
-    }
-
-    .application-form-container {
-        width: 60%;
-    }
-
-    .volunteer-section,
-    .volunteer-section1,
-    .volunteer-section2 {
-        max-width: 30%;
-        margin-bottom: 20px;
-    }
-
-    footer {
-        padding: 6px 10px; /* Further reduce padding for larger screens */
-        font-size: 0.6rem; /* Further reduce font size for larger screens */
-    }
-}
 
 /* Media queries for mobile devices */
 @media (max-width: 667px) {
